@@ -1,0 +1,62 @@
+.colorful-button {
+    --duration: 7s;
+    --delay: 0s;
+    --easing: linear;
+    --c-color: #ffff;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    display: table;
+    border-radius: 24px;
+    padding: 12px 34px;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: .02em;
+    line-height: 1.5;
+    color: var(--c-color);
+    background: radial-gradient(circle, var(--c-radial-inner), var(--c-radial-outer) 80%);
+    box-shadow: 0 0 20px var(--c-shadow);
+    
+    &:before {
+        content: '';
+        pointer-events: none;
+        position: absolute;
+        z-index: 3;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 24px;
+        animation: colorFlow var(--duration) var(--easing) infinite;
+    }
+
+    &.primary {
+        --c-radial-inner: #275EFE;
+        --c-radial-outer: #6D58FF;
+        --c-shadow: rgba(#5C86FF, .5);
+        --c-shadow-inset-top: rgba(#275EFE, .8);
+        --c-shadow-inset-bottom: rgba(#6EABFF, .6);
+    }
+
+    &.light, &.light:hover {
+        --c-radial-inner: #ACA0FF;
+        --c-radial-outer: #fff;
+        --c-shadow: rgba(#004CB4, .1);
+        --c-shadow-inset-top: rgba(#fff, 1);
+        --c-shadow-inset-bottom: rgba(#fff, 1);
+        color: #362A89;
+    }
+}
+
+@keyframes colorFlow {
+    0%, 100% {
+        box-shadow: inset 0 4px 12px rgba(#7c96e6, .1), inset 0 -4px 6px rgba(#275EFE, .6);
+    }
+    50% {
+        box-shadow: inset 0 4px 12px rgba(#ACA0FF, .2), inset 0 -4px 6px rgba(#3c6bfa, .8);
+    }
+}

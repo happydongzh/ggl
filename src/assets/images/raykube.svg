@@ -1,0 +1,16 @@
+<svg width="490" height="456" viewBox="0 0 490 456" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="50" cy="228" r="50" fill="gray"/>
+<circle cx="50" cy="228" r="45" stroke="black" stroke-opacity="0.9" stroke-width="10"/>
+<circle cx="245" cy="228" r="50" fill="gray"/>
+<circle cx="245" cy="228" r="45" stroke="black" stroke-opacity="0.9" stroke-width="10"/>
+<circle cx="245" cy="406" r="50" fill="gray"/>
+<circle cx="245" cy="406" r="45" stroke="black" stroke-opacity="0.9" stroke-width="10"/>
+<circle cx="440" cy="228" r="50" fill="gray"/>
+<circle cx="440" cy="228" r="45" stroke="black" stroke-opacity="0.9" stroke-width="10"/>
+<circle cx="245" cy="50" r="50" fill="gray"/>
+<circle cx="245" cy="50" r="45" stroke="black" stroke-opacity="0.9" stroke-width="10"/>
+<line x1="96.949" y1="224" x2="194.949" y2="223" stroke="gray" stroke-opacity="0.9" stroke-width="10"/>
+<line x1="294.947" y1="224" x2="389.947" y2="223" stroke="gray" stroke-opacity="0.9" stroke-width="10"/>
+<line x1="284.464" y1="378.464" x2="404.464" y2="258.464" stroke="gray" stroke-opacity="0.9" stroke-width="10"/>
+<line x1="287.521" y1="69.4502" x2="411.521" y2="192.45" stroke="gray" stroke-opacity="0.9" stroke-width="10"/>
+</svg>
