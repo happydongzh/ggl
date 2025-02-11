@@ -10,11 +10,11 @@ import Home from "@/pages/home";
  */
 const routes = [
   {
-    path: "",
+    path: "/",
     element: <HomeLayout />,
     children: [
       {
-        path: HOME_ROUTE,
+        index: true,
         element: <Home />,
       },
       // {
