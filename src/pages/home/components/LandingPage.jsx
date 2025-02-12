@@ -8,24 +8,22 @@ import { IS_MOBILE, GADGETSLAB_IMAGES } from "@/constants";
 const LandingPage = () => {
   const { motionZoomFade } = useMotionConfig();
   return (
-    <header className={`${!IS_MOBILE ? "px-[120px]" : "px-[50px]"}`}>
+    <header className="px-[3rem] min-w-96">
       <motion.div
         initial={motionZoomFade.initial}
         whileInView={motionZoomFade.whileInView}
-        className="flex flex-col items-center justify-center"
+        className="flex flex-col items-center justify-center pt-20 gap-10"
       >
-        <img
-          src={GADGETSLAB_IMAGES.logo}
-          alt="Gedgets lab logo"
-          className={`${!IS_MOBILE ? "h-[5rem] mt-[10rem] bg-gradient-to-tr from-green-300 to-blue-600  rounded-[2rem] p-5" : "h-[32px] mt-[124px]"}`}
-        />
+        <div className="w-[16rem] rounded-full p-3 bg-gradient-to-tr from-green-300 to-blue-600">
+          <img
+            src={GADGETSLAB_IMAGES.logo}
+            alt="Gedgets lab logo"
+          />
+        </div>
         <h2
-          className={`${!IS_MOBILE ? "text-[2rem] mt-20 font-extralight text-center" : "text-[24px] text-center mt-6"}`}
-        >
+          className={`${!IS_MOBILE ? "text-[2rem] font-extralight text-center" : "text-[24px] text-center mt-6"}`}>
           Your Trusted Service Partner for<br />
-          <span
-            className={`${!IS_MOBILE ? " bg-clip-text text-transparent bg-gradient-to-r  from-green-300 to-blue-600  ml-4 font-normal" : "text-[24px]"}`}
-          >
+          <span className={`${!IS_MOBILE ? "whitespace-nowrap ml-4 font-normal" : "text-[28px]"} bg-clip-text text-transparent bg-gradient-to-r  from-green-300 to-blue-600`}>
             ICT Solution
           </span>
         </h2>

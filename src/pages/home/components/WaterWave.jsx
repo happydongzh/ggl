@@ -4,7 +4,7 @@ import SimplexNoise from "simplex-noise";
 
 const useWaterWave = () => {
   const mountRef = useRef(null);
-  const height = 852;
+  const height = 752;
 
   useEffect(() => {
     const windowWidth = window.innerWidth;
@@ -90,7 +90,7 @@ const useWaterWave = () => {
 const WaterWave = () => {
   const mountRef = useWaterWave();
   return (
-    <div className="flex justify-center -mt-[490px] min-h-[432px]">
+    <div className="flex justify-center -mt-[30rem]">
       <div ref={mountRef} />
     </div>
   );

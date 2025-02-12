@@ -28,11 +28,12 @@ const Solution = () => {
           <motion.div
             initial={motionSlideLeft.initial}
             whileInView={motionSlideLeft.whileInView}
-            className="flex justify-end"
+            className="flex justify-center md:justify-end"
           >
             <div style={{
               backgroundImage: `url(${solution1})`,
             }} className="value justify-center gap-y-5">
+              {/* <img src={solution1} alt="flexible"/> */}
               <motion.h3
                 initial={motionSlideRight.initial}
                 whileInView={motionSlideRight.whileInView}
@@ -42,7 +43,7 @@ const Solution = () => {
               </motion.h3>
               <motion.p initial={motionFadeInUp.initial}
                 whileInView={motionFadeInUp.whileInView}
-                className="text-xl font-light text-gray-300 w-1/2 text-center p-5">
+                className="text-xl font-light text-gray-300 w-1/2 text-center p-5 bg-clip-text text-transparent bg-gradient-to-r from-green-300 to-blue-600">
                 We specialize in providing a flexible and customized services and solutions to our telecoms clients.Customer satisfaction is our priority
               </motion.p>
             </div>
@@ -50,7 +51,7 @@ const Solution = () => {
           <motion.div
             initial={motionSlideRight.initial}
             whileInView={motionSlideRight.whileInView}
-            className="flex justify-start"
+            className="flex justify-center md:justify-start"
           >
             <div style={{
               backgroundImage: `url(${solution2})`,
@@ -65,7 +66,7 @@ const Solution = () => {
 
               <motion.p initial={motionFadeInUp.initial}
                 whileInView={{ ...motionFadeInUp.whileInView, delay: 1 }}
-                className="text-xl font-light text-gray-300 w-1/2 text-center p-5">
+                className="text-xl font-light text-gray-300 w-1/2 text-center p-5 bg-clip-text text-transparent bg-gradient-to-l from-green-300 to-blue-600">
                 Our professional engineers are experienced staff, they are well- trained and qualified to work on all the systems we install and maintain.
               </motion.p>
 
@@ -75,7 +76,7 @@ const Solution = () => {
           <motion.div
             initial={motionSlideLeft.initial}
             whileInView={motionSlideLeft.whileInView}
-            className="flex justify-end"
+            className="flex justify-center md:justify-end"
           >
             <div style={{
               backgroundImage: `url(${solution3})`,
@@ -90,7 +91,7 @@ const Solution = () => {
               </motion.h3>
               <motion.p initial={motionFadeInUp.initial}
                 whileInView={{ ...motionFadeInUp.whileInView, delay: 1 }}
-                className="text-xl font-light text-gray-300 w-1/2 text-center p-5">
+                className="text-xl font-light text-gray-300 w-1/2 text-center p-5 bg-clip-text text-transparent bg-gradient-to-r from-green-300 to-blue-600">
                 Our experience teams will support every aspect of your project with knowledge sharing and competitive pricing.
                 Win-Win  is our target and we are here to help you succeed.
               </motion.p>
